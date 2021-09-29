@@ -17,11 +17,11 @@
       docker-compose exec localcomposer:latest bash
       cd /var/www/html
       composer create-project --prefer-dist laravel/laravel app
-  - Now, our structure directory are
-    --app
-    --composer
-    -----composer.dockerfile
-    --config ( includes all config for services )
+  - Now, our directory structure are
+    + --app
+    + --composer
+    + -----composer.dockerfile
+    + --config ( includes all config for services )
 + Step 2 : 
   - 3 services :
     - app : for execute php artisan 
