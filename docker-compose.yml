@@ -1,11 +1,27 @@
 version: '3'
 services:
-
+  #node extension 
+  node:
+    image: node:14-alpine
+    build:
+      context: ./app
+      dockerfile: ../config/node.dockerfile
+    container_name: node
+    working_dir: /usr/src/app
+    volumes:
+      - ./app:/usr/src/app
+      - ./config/init-scripts/:/init-scripts/
+    entrypoint:
+      - /init-scripts/node_start.sh
+    depends_on:
+      - app
+    networks:
+      - app-network
   #PHP Service
   app:
     build:
       context: ./app
-      dockerfile: ./config/Dockerfile
+      dockerfile: ../config/Dockerfile
     image: digitalocean.com/php
     container_name: app
     restart: unless-stopped
