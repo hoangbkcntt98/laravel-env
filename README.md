@@ -1,7 +1,7 @@
 + Config docker :
  - You should use linux container ( with window user let install wsl )
  - Sharing your drive ( important)
-    - Create a account in Control Panel\System and Security\Administrative Tools\Computer Manager\System tools 
+    - Create an account in Control Panel\System and Security\Administrative Tools\Computer Manager\System tools 
     - Add the account to docker-user group
     - Docker Destop/Setting/Shared Devices/Apply 
     - Login with the account 
