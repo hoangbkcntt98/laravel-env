@@ -23,3 +23,7 @@
     -----composer.dockerfile
 + Step 2 : 
   - continue with : https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
+  - 3 services :
+    - app : for execute php artisan 
+    - db: mysql db
+    - webserver: nginx  
