@@ -31,4 +31,6 @@
     - add a user 'root'@'..network' in services db 
     - localhost:8098
 + Step 3 : docker-compose up -d
-References : https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
++ References : 
+  + https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
+  + https://kipalog.com/posts/Cai-dat-moi-truong-Docker-cho-Laravel-2019
