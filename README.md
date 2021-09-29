@@ -1,4 +1,11 @@
-Step 1 :Create composer container
++ Config docker :
+ - You should use linux container ( with window user let install wsl )
+ - Sharing your drive ( important)
+    - Create a account in Control Panel\System and Security\Administrative Tools\Computer Manager\System tools 
+    - Add the account to docker-user group
+    - Docker Destop/Setting/Shared Devices/Apply 
+    - Login with the account 
++ Step 1 :Create composer container
   - Create a localcomposer for creating a laravel app with composer
   - run in cmd :
     docker build -t localcomposer -f ./composer/composer.dockerfile ./composer
@@ -14,5 +21,5 @@ Step 1 :Create composer container
     --app
     --composer
     -----composer.dockerfile
-Step 2 : 
-  - continue with instruction : https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
++ Step 2 : 
+  - continue with : https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
