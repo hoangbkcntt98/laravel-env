@@ -10,8 +10,8 @@
   - run in cmd :
     docker build -t localcomposer -f ./composer/composer.dockerfile ./composer
   - run image which are just created
-    Linux :docker run -it -d -v $(pwd):/var/www/html localcomposer:latest
-    Windows :docker run -it -d -v ${pwd}:/var/www/html localcomposer:latest
+    - Linux :docker run -it -d -v $(pwd):/var/www/html localcomposer:latest
+    - Windows :docker run -it -d -v ${pwd}:/var/www/html localcomposer:latest
   - then, use composer for creating laravel app ( with name is "app")
     - exec to app and use composer for creating app 
       docker-compose exec localcomposer:latest bash
