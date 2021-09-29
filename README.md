@@ -21,9 +21,14 @@
     --app
     --composer
     -----composer.dockerfile
+    --config ( includes all config for services )
 + Step 2 : 
-  - continue with : https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
   - 3 services :
     - app : for execute php artisan 
     - db: mysql db
     - webserver: nginx  
+  - Add a phpmyadmin service :
+    - add a user 'root'@'..network' in services db 
+    - localhost:8098
++ Step 3 : docker-compose up -d
+References : https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
